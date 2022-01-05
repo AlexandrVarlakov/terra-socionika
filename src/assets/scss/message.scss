@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.message{
+    width: 300px;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    border-radius: 10px 10px 0 0;
+    z-index: 999;
+
+    opacity: 0;
+
+    animation: fadeInMassage 1s forwards;
+    
+}
+
+@keyframes fadeInMassage {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutMassage {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+.fadeOutAnimation{
+    animation: fadeOutMassage 1s forwards;
+}
+
+
+.message__close-panel{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    
+    border-radius: 10px 10px 0 0;
+}
+
+.message__close{
+    width: 20px;
+    height: 20px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.message__close-line{
+    width: 16px;
+    height: 3px;
+    border-radius: 25px;
+    
+    position: absolute;
+    transition: .5s;
+    cursor: pointer;
+    &:nth-child(1){
+        transform: rotate(45deg) ;
+    }
+    &:nth-child(2){
+        transform: rotate(-45deg) ;
+    }
+}
+
+.message__body{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.message__title{
+    font-size: 18px;
+    
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.message__text{
+    font-size: 16px;
+    
+    text-align: justify;
+}
+
+.message__btn-container{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.message__btn{
+    padding: 5px 20px;
+    min-width: 150px;
+    
+    border-radius: 10px;
+    
+    font-size: 16px;
+    background-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+    
+}
+
+.message__ind-container{
+    width: 100%;
+    height: 10px;
+    
+}
+
+.message__ind-inner{
+    width: 0%;
+    height: 8px;
+    
+}
+
+.err-msg{
+    background-color: red;
+    .message{       
+        background-color: red;        
+    }
+   
+    
+    .message__close-panel{
+        background-color: #991010;
+    }
+    
+    .message__close{  
+        &:hover{
+            .message__close-line{
+                background-color: rgba($color: #fff, $alpha: .8);
+            }        
+        }
+    }
+    
+    .message__close-line{
+        background-color: rgba($color: #fff, $alpha: 1.0);   
+    }
+
+    .message__title{
+        color: #fff;
+    }
+    
+    .message__text{
+        color: #fff;
+    }
+       
+    .message__btn{
+        border: 2px solid #991010;
+        color: #fff;
+        background-color: transparent;
+        
+        &:hover{
+            background-color: rgba($color: #fff, $alpha: .3);
+        }
+    }
+    
+    .message__ind-container{
+        border: 1px solid #991010;
+    }
+    
+    .message__ind-inner{
+        background-color: rgba($color: #fff, $alpha: .5);
+    }
+    
+}
+
+.success-msg{
+    background-color: #64c48a;
+    .message{       
+        background-color: #64c48a;        
+    }
+   
+    
+    .message__close-panel{
+        background-color: #109946;
+    }
+    
+    .message__close{  
+        &:hover{
+            .message__close-line{
+                background-color: rgba($color: #fff, $alpha: .8);
+            }        
+        }
+    }
+    
+    .message__close-line{
+        background-color: rgba($color: #fff, $alpha: 1.0);   
+    }
+
+    .message__title{
+        color: #fff;
+    }
+    
+    .message__text{
+        color: #fff;
+    }
+       
+    .message__btn{
+        border: 2px solid #109946;
+        color: #fff;
+        background-color: transparent;
+        
+        &:hover{
+            background-color: rgba($color: #fff, $alpha: .3);
+        }
+    }
+    
+    .message__ind-container{
+        border: 1px solid #109946;
+    }
+    
+    .message__ind-inner{
+        background-color: rgba($color: #fff, $alpha: .5);
+    }
+    
+}
+

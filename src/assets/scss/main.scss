@@ -1,0 +1,31 @@
+@import 'fonts-include/_montserrat.scss';
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	outline: none;
+}
+
+button{
+	font-family: inherit;
+	border: none;
+	background: transparent;
+	outline: none;
+}
+
+input{
+	font-family: inherit;
+	border: none;
+	background: #fff;
+	outline: none;
+}
+
+address{
+	font-style: normal;
+}
