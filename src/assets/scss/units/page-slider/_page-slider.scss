@@ -1,0 +1,317 @@
+
+.section.page-slider{
+    background-color: hsl(101, 31%, 62%);
+    min-height: 330px;
+    
+    background: linear-gradient(0deg, rgb(156, 225, 12), rgb(32, 142, 55));
+
+    
+
+    @media (max-width: 1024px){
+        padding-right: 0;
+    }
+    
+    .section__inner{
+        display: flex;
+        position: relative;
+        
+        .social-block{
+            position: absolute;
+            display: flex;
+            background: #fff;
+            z-index: 77;
+            width: 68px;
+            height: 100%;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media (max-width: 1024px){
+                right: 15px;
+            }
+
+            @media (max-width: 680px){
+                display: none;
+            }
+        }
+
+        .social-link{
+            width: 38px;
+            height: 38px;
+            background-color: #0b0c10;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+        }
+
+        .social-block__o-btn{
+            width: 100%;
+            height: 52px;
+            background-color: #f08400;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.m-slider{
+
+    
+
+    padding-left: 65px;
+    height: 100%;
+    width: 100%;
+    max-width: 1075px;
+    overflow: hidden;
+    position: relative;
+
+
+    @media (max-width: 1180px){
+        max-width: 100%;
+    }
+    @media (max-width: 560px){
+        padding-left: 35px;
+    }
+    .img-container{
+        width: 566px;
+        height: 330px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        img{
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+
+        .img-fog{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            object-fit: cover;
+        }
+     
+        
+        @media (max-width: 1024px){
+            transform: translateX(50%);
+        }
+        @media (max-width: 560px){
+            display: none;
+        }
+    }
+    .slide-text-block{
+        padding: 45px 0 0 0;
+        max-width: 100%;
+        position: relative;
+        z-index: 5;
+
+
+        @media (max-width: 1024px){
+            padding: 28px 0 0 0;
+        }
+        @media (max-width: 560px){
+            padding: 28px 0 0 15px;
+
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        @media (max-width: 420px){
+            padding: 28px 0 0 0px;
+        }
+    }
+
+    .course-date{
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+        color: #000;
+        padding: 15px;
+        background-color: #f08400;
+    }
+
+    .course-type{
+      
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.19;
+        color: #fff;
+        text-transform: uppercase;
+
+        @media (max-width: 420px){
+            font-size: 16px;
+        }
+    }
+
+    .course-name{
+        font-size: 44px;
+        font-weight: bold;
+        line-height: 1;
+        color: #fff;
+        margin: 10px 0 5px;
+
+        @media ( max-width: 560px ){
+            font-size: 38px;
+            margin: 0px 0 5px;
+        }
+        @media ( max-width: 420px ){
+            font-size: 32px;
+        }
+    }
+
+    .course-about{
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 1;
+        color: #fff;
+
+        @media (max-width: 560px){
+            font-size: 22.5px;
+        }
+
+        @media (max-width: 560px){
+            font-size: 18px;
+        }
+    }
+
+    .about-course-block{
+        margin-top: 35px;
+        max-width: 75%;
+        @media (max-width: 1024px){
+            margin-top: 20px;
+            max-width: 400px;
+            max-width: calc(100% - 30px);
+        }
+
+        @media (max-width: 680px){
+            padding-right: 30px;
+        }
+
+        @media (max-width: 560px){
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+    }
+    
+
+    .swiper-pagination{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        bottom: 40px;
+        width: 100%;
+
+        @media (max-width: 1024px){
+            bottom: 20px;
+            padding-right: 22%;
+        }
+
+        @media (max-width: 560px){
+            bottom: 50px;
+
+            padding-right: 15%;
+        }
+
+        @media (max-width: 420px){
+            bottom: 20px;
+        }
+    }
+
+    .swiper-pagination-bullet{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid rgba($color: #fff, $alpha: 1);
+        background-color: rgba($color: #fff, $alpha: 0);;
+        transition: 300ms;
+        z-index: 50;
+        margin: 0 17px;
+        cursor: pointer;
+    }
+
+    .swiper-pagination-bullet-active{
+        background-color:  rgba($color: #fff, $alpha: 1);
+        cursor: initial;
+    }
+
+    .next-slide{
+        
+        top: 50%;
+        right: 0;
+
+        transform: translateX(-50% ) translateY(-20%);
+
+        @media (max-width: 1180px){
+            right: 90px;
+        }
+
+        @media (max-width: 680px){
+            right: 10px;
+            transform: translateX(0% ) translateY(-20%);
+        }
+        
+    }
+
+    .prev-slide{
+        
+        top: 50%;
+        left: 0;
+
+        svg{
+            transform: translateX(-25% ) translateY(-20%) rotate(180deg);
+        }
+        
+    }
+    .nav-btn{
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        z-index: 50;
+        cursor: pointer;
+        path{
+            fill: #fff;
+            transition: 300ms;
+        }
+
+        &:hover{
+            path{
+                fill: #f08400;
+                
+            }   
+        }
+
+        @media (max-width: 420px){
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+
+    .swiper-button-disabled{
+        opacity: .5;
+        &:hover{
+            path{
+                fill: #fff;
+                
+            }   
+        }
+
+    }
+
+    
+    
+}

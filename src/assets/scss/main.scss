@@ -1,10 +1,58 @@
 @import 'fonts-include/_montserrat.scss';
 
+@import 'units/header/_header.scss';
+
+@import 'units/menu/_mmenu.scss';
+
+@import 'units/page-form/_page-form.scss';
+
+@import 'units/easyForm/_easyForm.scss';
+
+@import 'units/page-slider/_page-slider.scss';
+
+@import 'units/mob-menu/_mob-menu.scss';
+
+@import 'units/footer/_footer.scss';
+
+/*
+
+	Шрифты: 
+
+	font-weight: 400;
+	font-weight: 500;
+	font-weight: 600;
+	font-weight: bold;
+
+
+*/
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+
+html{
+	font-family: $font-family;
+
+	min-height: 100vh;
+}
+
+
+body{
+	min-height: 100vh;
+	display: grid;	
+	grid-template-rows: auto 1fr auto;
+}
+
+
+main{
+	min-height: 500px;
+
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
 }
 
 a{
@@ -28,4 +76,30 @@ input{
 
 address{
 	font-style: normal;
+}
+
+
+.section{
+	display: flex;
+	justify-content: center;
+	padding: 0 15px;
+}
+
+.section__inner{
+	width: 100%;
+	max-width: 1140px;
+}
+
+.title{
+	font-size: 36px;
+	font-weight: 600;
+	text-align: center;
+	color: #000;
+	margin-bottom: 30px;
+	
+
+
+	@media (max-width: 580px){
+		font-size: 30px;
+	}
 }

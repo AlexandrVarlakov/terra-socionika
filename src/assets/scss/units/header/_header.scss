@@ -1,0 +1,242 @@
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 0 15px 20px;
+
+    @media (max-width: 1024px){
+        padding: 0 15px;
+    }
+}
+
+.header__inner{
+    width: 100%;
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    @media (max-width: 1024px){
+        grid-template-rows: auto auto auto;
+    }
+    
+}
+
+.h-contacts{
+    
+    grid-column: span 6;
+
+    display: flex;
+
+    @media (max-width: 1024px){
+        grid-column: span 12;
+        background-color: #358125;
+        position: relative;
+        left: -15px;
+        width: calc(100% + 30px);
+        padding: 5px 15px;
+    }
+
+
+    @media (max-width: 420px){
+        display: flex;
+        flex-direction: column;
+        padding: 10px 15px;
+        
+    }
+}
+
+
+.mnav{
+    grid-column: span 12;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 1280px){
+        justify-content: flex-start;
+    }
+
+    @media (max-width: 1024px){
+        display: none;
+    }
+}
+
+
+
+
+.logo{
+    grid-column: span 3;
+
+    @media (max-width: 1024px){
+        grid-column: span 9;   
+        grid-row: 2 / 3;
+        padding: 20px 0 30px;
+    }
+    @media (max-width: 680px){
+        grid-column: span 9;
+    }
+
+    @media (max-width: 420px){
+        padding: 10px 0 15px;
+        img{
+            width: 180px;
+        }
+        
+    }
+}
+
+.h-we-work{
+    grid-column: span 3;
+
+    
+    
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 0.88;
+    text-align: left;
+    color: #358125;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 16px;
+    padding-left: 5px;
+    
+
+    span{
+        color: #fcad2c;
+    }
+
+    @media (max-width: 1024px){
+        
+        justify-content: flex-start;
+        grid-row: 3 / 4;
+        grid-column: span 9;
+        padding: 0;
+        flex-direction: row;
+        font-size: 15px;
+        margin: -38px 0 0 36px;
+
+        br{
+            display: none;
+        }
+        span{
+            padding-left: 8px;
+        }
+    }
+
+    
+    @media (max-width: 420px){
+        font-size: 13px;
+        margin: -25px 0 0 32px;
+    }
+}
+
+.h-phones{
+    
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 10px 0 0 15px;
+
+    a{    
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+          
+    }
+
+    @media (max-width: 1024px){
+        
+        width: 60%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    @media (max-width: 680px){
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 50%;
+
+        @media (max-width: 680px){
+            a{
+                &:last-of-type{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 420px){
+        width: 100%;
+        align-items: center;
+
+        a{
+            font-size: 14px;
+            &:last-of-type{
+                margin-top: 0px;
+            }
+        }
+        
+    }
+
+    
+}
+
+.h-green-line{
+    position: absolute;
+    z-index: -1;
+    height: 60px;
+    width: 56%;
+    top: 0;
+    right: 0;
+    background-color: #358125;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: #fff;
+        border-radius: 50%;
+        transform: translateX(-77%) translateY(-52%);
+    }
+
+    @media (max-width: 1024px){
+        display: none;
+    }
+}
+
+.h-address{    
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+
+    @media (max-width: 1024px){
+        width: 40%;
+        padding-top: 0;
+        align-items: center;
+    }
+
+    @media (max-width: 680px){
+        width: 50%;
+    }
+
+    @media (max-width: 420px){
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+}
+
+.h-address__inner{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+
+
+    @media (max-width: 420px){
+        text-align: center;
+        font-size: 14px;
+    }
+}

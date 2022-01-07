@@ -1,0 +1,8 @@
+.section.page-form{
+    background-color: #95bd16;
+    padding: 60px 15px 80px;
+
+    @media (max-width: 580px){
+        padding: 40px 15px 50px;
+    }
+}

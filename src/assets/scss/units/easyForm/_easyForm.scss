@@ -1,0 +1,248 @@
+@import '_easyRadioCheck.scss';
+$container-width: 600px;
+
+
+$transition: 300ms;
+
+
+
+$input-ff: inherit;
+$input-color: rgb(61, 61, 61);
+$input-height: 56px;
+
+$input-border: 1px solid #777;
+
+$input-padding: 0 15px;
+$input-fs: 1.25rem;
+$input-br: 5px;
+
+$input-border-color-on-focus: #333;
+
+
+/***********form-btn-send*********************/
+
+$btn-height: 56px;
+$btn-width: 300px;
+$btn-border: none;
+$btn-fs: 1.15rem;
+$btn-ff: inherit;
+$btn-br: 5px;
+$btn-bg: #2a699f;
+$btn-color: #fff;
+$btn-text-transform: uppercase;
+/***********error-msg**************/
+
+$err-msg-color: #a23d3d;
+$err-fs: .75rem;
+$err-ff: inherit;
+
+
+$err-input-border-color: #a23d3d; 
+
+.form-container{
+    width: 100%;
+    max-width: $container-width;
+
+    
+}
+
+.easyGridForm{
+    display: grid;
+    grid-gap: 5px 25px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btn-wrap{
+    width: 100%;
+    justify-content: center;
+}
+
+
+.input-outer-wrap{
+    width: 100%;
+  }
+.input-wrap{
+    width: 100%;
+}
+
+.input-text{
+    font-family: $input-ff;
+    font-size: $input-fs;
+    width: 100%;
+    outline: none;
+    height: $input-height;
+    border: $input-border;
+    padding: $input-padding;
+    color: $input-color;
+    border-radius: $input-br;
+    transition: $transition;
+
+    &:focus{
+        border-color: $input-border-color-on-focus;
+    }
+}
+
+.input-outer-wrap[data-err="1"]{
+    .err-msg{
+        transform: scaleX(1);    
+    }
+
+    .input-text{
+        border-color: #a23d3d;
+    }
+}
+
+.input-outer-wrap.full-length, .cb-wrap.full-length, .btn-wrap.full-length{
+    grid-column: 1 / 3;
+}
+
+.cb-wrap.full-length{
+    padding: 10px 0;
+}
+
+
+.err-msg{
+    font-family: $err-ff;
+    font-size: $err-fs;
+    color: $err-msg-color;
+    transition: $transition;
+    transform: scaleX(0px);
+    transform-origin: left;
+}
+  
+.form-btn-send{
+    font-family: $btn-ff;
+    max-width: 100%;
+    width: $btn-width;
+    height: $btn-height;
+    border: $btn-border;
+    transition: $transition;
+    font-size: $btn-fs;
+    border-radius: $btn-br;
+    background: $btn-bg;
+    color: $btn-color;
+    cursor: pointer;
+    text-transform: $btn-text-transform;
+}
+
+.form-btn-send:disabled{
+    background: #555;
+    cursor: default; 
+    
+}
+
+
+.page-form{
+    .form-container{
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+
+        @media (max-width: 580px){
+
+        }
+    }
+
+    .easyGridForm{
+        display: grid;
+        grid-gap: 17px 30px;
+        grid-template-columns: 260px 1fr;
+        grid-template-rows: 175px auto;
+
+
+        @media (max-width: 580px){
+            display: flex;
+            flex-direction: column;
+            max-width: 360px;
+            margin: 0 auto;
+
+            grid-gap: initial;
+        }
+    }
+
+    .message{
+        width: 100%;
+        height: 100%;
+        resize: none;
+        border: 1px solid #46802a;
+        outline: none;
+        font-size: 16px;
+        font-family: inherit;
+        padding: 20px;
+        color: #000;
+        &:focus{
+            border-color: #2e5c17;
+        }
+
+        @media (max-width: 580px){
+            height: 175px;
+        }
+    }
+
+    .input-text{
+        
+        font-size: 16px;
+        width: 100%;
+        font-weight: 500;;
+        outline: none;
+        height: 48px;
+        border: 1px solid #46802a;
+        padding: 20px 13px 15px;
+        color: #000;
+        border-radius: 0;
+        transition: 300ms;
+        &::placeholder{
+            opacity: 1;
+        }
+        &:focus{
+            border-color: #2e5c17;
+        }
+    }
+
+    .easyGridForm__bottom{
+        grid-column: span 2;
+        display: flex;
+
+
+        @media (max-width: 580px){
+            flex-direction: column;
+
+            margin-top: 30px;
+        }
+    }
+    .form-btn-send{
+        font-family: $btn-ff;
+        max-width: 100%;
+        width: 180px;
+        min-width: 180px;
+        height: 46px;
+        border: 1px solid #358125;
+        transition: 300ms;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 0;
+        background: #358125;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 25px;
+        text-transform: initial;
+        @media (max-width: 580px){
+            margin: 40px auto 0;
+        }
+    }
+   
+
+    .form-info{
+        font-size: 14px;
+        color: #000;
+        a{
+            color: inherit;
+            text-decoration: underline;
+            transition: 300ms;
+
+            &:hover{
+                color: #2d2a23;
+            }
+        }
+    }
+}

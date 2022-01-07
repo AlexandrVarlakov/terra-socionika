@@ -6,8 +6,414 @@
     <meta name="description" content="Краткое описание страницы"/>
     <title>Сайт</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/main.min.css">     
+    <link rel="stylesheet" href="assets/css/main.min.css"> 
+    <link rel="stylesheet" href="assets/css/swiper.min.css"> 
+
     
 </head>
 <body>
-    <header>header</header>
+    <header class="header">
+        <div class="h-green-line"></div>
+        <div class="header__inner">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/img/h-logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="h-we-work">
+                Мы работаем <br />
+                <span>с 2004 г.</span>
+            </div>
+
+
+            <div class="h-contacts">
+                <div class="h-phones">
+                    <a href="tel:+74959797816">+7 (495) 979 - 78 - 16</a>
+                    <a href="tel:+79055375308">+7 (905) 537 - 53 - 08</a>
+                </div>
+    
+    
+                <address class="h-address">
+                    <div class="h-address__inner">
+                        Москва, Чапаевский пер., <br />
+                        д. 6, 2 этаж, оф.9
+                    </div>
+                    
+                </address>
+            </div>
+
+            
+
+            <nav class="mnav">
+                <ul class="mmenu">
+                    <li class="mmenu__item"><a href="#" class="mmenu__link current-page">Главная</a></li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">
+                        Обучение</a>
+                        <div class="mmenu-sub">
+                            <ul class="mmenu-sub__list">
+                                <li class="mmenu-sub__item">Ликвидация соционической безграмотности – в записи
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+               
+    
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 4</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 5</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 6 но с очень очень очень очень очень очень длинной ссылкой</li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 7</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 8</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Тип-коучинги
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Расширенные курсы <br />(очно-заочные курсы)
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Очно-заочные курса</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Введение в соционику</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Модель А</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Соционические типы</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Визуальный образ типа</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Возрастное наполнение <br />и искажения типа</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Интертипные отношения</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Практика 100+</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Будущим консультантам – программа диагностики
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 4</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 5</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Приглашение на обучение
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 4</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 5</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 6 но с очень очень очень очень очень очень длинной ссылкой</li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 7</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 8</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Тренажер + вводная страница тренажера
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 4</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 5</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 6 но с очень очень очень очень очень очень длинной ссылкой</li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 7</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 8</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="mmenu-sub__item"><a class="mmenu-sub__link" href="#">Отзывы</a></li>
+                            </ul>
+                        </div>
+                        
+
+                    </li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">Консультирование</a>
+                        <div class="mmenu-sub">
+                            <ul class="mmenu-sub__list">
+                                <li class="mmenu-sub__item">Ликвидация соционической безграмотности – в записи
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+               
+    
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 4</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 5</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 6 но с очень очень очень очень очень очень длинной ссылкой</li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 7</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 8</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Тип-коучинги
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Расширенные курсы <br />(очно-заочные курсы)
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Очно-заочные курса</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Введение в соционику</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Модель А</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Соционические типы</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Визуальный образ типа</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Возрастное наполнение <br />и искажения типа</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Интертипные отношения</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Практика 100+</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Будущим консультантам – программа диагностики
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 4</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 5</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Приглашение на обучение
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 4</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 5</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 6 но с очень очень очень очень очень очень длинной ссылкой</li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 7</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 8</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Тренажер + вводная страница тренажера
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 4</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 5</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 6 но с очень очень очень очень очень очень длинной ссылкой</li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 7</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 8</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="mmenu-sub__item"><a class="mmenu-sub__link" href="#">Отзывы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">Для бизнеса</a>
+                        <div class="mmenu-sub">
+                            <ul class="mmenu-sub__list">
+                                <li class="mmenu-sub__item">Ликвидация соционической безграмотности – в записи
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+               
+    
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 4</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 5</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 6 но с очень очень очень очень очень очень длинной ссылкой</li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 7</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 8</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Тип-коучинги
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Расширенные курсы <br />(очно-заочные курсы)
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Очно-заочные курса</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Введение в соционику</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Модель А</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Соционические типы</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Визуальный образ типа</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Возрастное наполнение <br />и искажения типа</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Интертипные отношения</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Практика 100+</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Будущим консультантам – программа диагностики
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 4</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 5</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Приглашение на обучение
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 4</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 5</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 6 но с очень очень очень очень очень очень длинной ссылкой</li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 7</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 8</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mmenu-sub__item">Тренажер + вводная страница тренажера
+                                    <div class="mmenu-sub__arrow">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                            <g>
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul class="mmenu-child">
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 1</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 2</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 3</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 4</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 5</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 6 но с очень очень очень очень очень очень длинной ссылкой</li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 7</a></li>
+                                        <li class="mmenu-child__item"><a href="#" class="mmenu-child__link">Пункт - 8</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="mmenu-sub__item"><a class="mmenu-sub__link" href="#">Отзывы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">Типы людей</a></li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">Читалка</a></li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">О центре</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-block">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
