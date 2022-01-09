@@ -1,0 +1,107 @@
+.inner-nav-block{
+
+}
+
+.inner-nav{
+    padding: 33px 33px 31px 31px;
+    border: solid 2px #8758a6;
+
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    
+
+    @media (max-width: 1024px){
+        flex-direction: row;        
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 560px){
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px 30px 35px;
+    }
+
+    li{
+        margin-top: 12px;
+        color: #000;
+        transition: 300ms;
+        position: relative;
+        padding-left: 15px;
+
+        
+
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            border-radius: 2px;
+            background-color: #000;
+            left: -2px;
+            top: 5px;
+
+            transition: 300ms;
+        }
+        &:hover{
+            &::before{
+                background-color: #fcad2c;
+            }
+            a{
+                color: #fcad2c;;
+            }
+            
+        }
+
+        &:first-of-type{
+            margin-top: 0;
+        }
+
+        @media (max-width: 1024px){
+            margin: 6px 15px 6px 0;
+            max-width: 145px;
+            
+            &:first-of-type{
+                margin-top: 6px;
+            }
+        }
+
+        @media (max-width: 560px){
+            max-width: initial;
+            margin: 20px 0px 0 0;
+        }
+    }
+    a{
+        color: inherit;      
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1;
+        transition: 300ms;
+        
+    }
+
+    li.current{
+        color: #8758a6;
+        a{
+            text-decoration: underline;
+        }
+        &::before{
+            background-color: #8758a6;
+        }
+        &:hover{
+            color: #8758a6;
+            a{
+                color: #8758a6;
+            }
+            &::before{
+                background-color: #8758a6;
+            }
+        }
+    }
+}

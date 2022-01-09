@@ -12,6 +12,19 @@
 
 @import 'units/mob-menu/_mob-menu.scss';
 
+@import 'units/breadcrumbs/_breadcrumbs.scss';
+
+@import 'units/books/_books.scss';
+
+@import 'units/inner-nav/_inner-nav.scss';
+
+@import 'units/link-list/_link-list.scss';
+
+@import 'units/hot-links/_hot-links.scss';
+
+
+@import 'units/coordinates/_coordinates.scss';
+
 @import 'units/footer/_footer.scss';
 
 /*
@@ -95,11 +108,47 @@ address{
 	font-weight: 600;
 	text-align: center;
 	color: #000;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	
 
 
 	@media (max-width: 580px){
 		font-size: 30px;
+	}
+}
+
+.upper{
+	text-transform: uppercase;
+}
+
+.section.page-2-col{
+	padding: 60px 15px;
+
+	.section__inner{
+		display: grid;
+
+		grid-template-columns: 260px 1fr;
+		grid-gap: 30px;
+
+		@media (max-width: 1024px){
+			grid-template-columns: 1fr;
+			
+		}
+
+		@media (max-width: 560px){
+			grid-gap: 45px;
+		}
+	}
+
+	@media (max-width: 1024px){
+		padding: 25px 15px;
+	}
+
+	.left-col{
+
+	}
+
+	.right-col{
+
 	}
 }

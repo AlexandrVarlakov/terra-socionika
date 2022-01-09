@@ -1,0 +1,141 @@
+.book{
+    display: flex;
+
+    padding-bottom: 15px;
+    border-bottom: 1px solid #b2b2b2;
+
+    &:not(:first-of-type){
+        margin-top: 35px;
+    }
+
+    &:last-of-type{
+        border-bottom: none;
+    }
+
+
+    @media (max-width: 560px){
+        flex-direction: column; 
+        padding-bottom: 30px;
+    }
+}
+
+.book__name{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #8758a6;
+    text-transform: uppercase;
+}
+
+.book__author{
+    
+        
+    
+
+    margin-bottom: 15px;
+
+    p{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #000;
+    }
+      
+}
+.book__annotation{
+    
+    margin-bottom: 15px;
+
+    p{
+        line-height: 1.5;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #000;
+        
+    }
+
+    a{
+        color: #000;
+        text-decoration: underline;
+        transition: 300ms;
+
+        &:hover{
+            color: #fcad2c;
+
+        }
+    }
+}
+
+.book__info{
+    font-size: 16px;
+    font-weight: 500;
+    
+    font-style: italic;
+    line-height: 1.5;
+    color: #000;
+
+    span{
+        color: #8758a6;
+        text-decoration: underline;
+    }
+}
+
+.book__img-col{
+    width: 195px;
+    min-width: 195px;
+    display: flex;
+    margin-right: 25px;
+    a{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    @media (max-width: 560px){
+        margin-bottom: 30px;
+    }
+}
+
+.book__quote{
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000;
+    margin-top: 15px;
+}
+
+.book__read{
+    margin-top: 15px;
+    a{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #6aa317;
+
+        span{
+            display: inline-block;
+
+            transition: 300ms;
+        }
+
+
+        &:hover{
+            span{
+                transform: translateX(5px);
+            }
+            
+        }
+    }   
+    
+    @media (max-width: 1024px){
+        margin-top: 5px;
+    }
+}

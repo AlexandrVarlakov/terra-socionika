@@ -1,0 +1,43 @@
+.link-list{
+
+
+    padding: 25px 17px 38px 16px;
+
+    background-color: #f3f3f3;
+    
+    @media (max-width: 1024px){
+        display: none;
+    }
+}
+
+.link-list__title{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.link-list__list{    
+    padding: 0 0 0 20px;
+    
+    margin-top: 20px;
+    font-size: 18px;
+
+    
+
+    li{
+        margin-top: 10px;
+        color: #000;
+        transition: 300ms;
+        &:hover{
+            color: #fcad2c;;
+        }
+    }
+
+    a{
+        font-size: 16px;
+        text-align: left;
+        color: inherit;
+    }
+}
