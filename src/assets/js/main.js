@@ -25,30 +25,36 @@ var mainSlider = new Swiper('.m-slider', {
 document.addEventListener('DOMContentLoaded', function(){
     
     let hotLinks = document.querySelector('.hot-links');
-    let contentCol = document.querySelector('.content-col');
+    let page = document.querySelector('.section.page-2-col');
     let windowWidth = window.innerWidth;
     
 
     let leftCol = document.querySelector('.left-col');
     let linksList = document.querySelector('.link-list');
 
-    if  (hotLinks && contentCol)  {
+    if  (hotLinks && page)  {
 
         if (windowWidth < 1025){
-            contentCol.append(hotLinks);
+            page.append(hotLinks);
         }
 
         window.addEventListener('resize', function(){
             let windowWidth = window.innerWidth;
+
+            
+
             if ( windowWidth  < 1025) {
-                if ( !contentCol.querySelector('.hot-links') ){
-                    contentCol.append(hotLinks);
+                if ( leftCol.querySelector('.hot-links') ){
+                    page.append(hotLinks); 
                 }
             } else {
-                if ( linksList ) {
-                    linksList.insertAdjacentElement('beforebegin', hotLinks);
-                } else {
-                    leftCol.append(hotLinks);
+                if ( !leftCol.querySelector('.hot-links') ){
+                    
+                    if ( linksList ) {
+                        linksList.insertAdjacentElement('beforebegin', hotLinks);
+                    } else {
+                        leftCol.append(hotLinks);
+                    }
                 }
             }
         });
@@ -145,3 +151,21 @@ mobParentItems.forEach( (item) => {
     }
 } )
 
+
+let weHelpItem = document.querySelectorAll('.we-help-item');
+
+if ( weHelpItem ) {
+    weHelpItem.forEach( (item) => {
+        item.onclick = function(){
+            let windowWidth = window.innerWidth;
+            if (windowWidth <= 580){
+                let linkBlock = item.querySelector('.we-help-item__link');
+
+                if ( linkBlock ){
+                    window.location.href = linkBlock.href;
+                }
+                
+            }
+        }
+    })
+}

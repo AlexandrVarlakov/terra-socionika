@@ -25,6 +25,12 @@
 
 @import 'units/coordinates/_coordinates.scss';
 
+
+@import 'units/about-centre/_about-centre.scss';
+
+
+@import 'units/courses/_courses.scss';
+
 @import 'units/footer/_footer.scss';
 
 /*
@@ -121,9 +127,18 @@ address{
 	text-transform: uppercase;
 }
 
+.text{
+	font-size: 18px;
+  	line-height: 1.1;
+  	color: #000;
+}
+
+
+
 .section.page-2-col{
 	padding: 60px 15px;
-
+	flex-direction: column;
+	align-items: center;
 	.section__inner{
 		display: grid;
 
@@ -142,7 +157,11 @@ address{
 
 	@media (max-width: 1024px){
 		padding: 25px 15px;
+
+		
 	}
+
+
 
 	.left-col{
 
