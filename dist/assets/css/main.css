@@ -2375,6 +2375,17 @@
     .we-help-item__link {
       display: none; } }
 
+.st-title-block .title {
+  margin-bottom: 0; }
+
+.st-title-block .subtitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #000;
+  text-transform: uppercase; }
+
 .section.courses {
   padding: 60px 15px 110px; }
   .section.courses .title {
@@ -2493,6 +2504,20 @@
   background-image: -webkit-gradient(linear, left bottom, left top, from(#8758a6), to(#b569cb));
   background-image: -o-linear-gradient(bottom, #8758a6, #b569cb);
   background-image: linear-gradient(to top, #8758a6, #b569cb); }
+
+.courses-item.blue .courses-item__name-block {
+  opacity: 0.95;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#4240a3), to(#7c79e4));
+  background-image: -o-linear-gradient(bottom, #4240a3, #7c79e4);
+  background-image: linear-gradient(to top, #4240a3, #7c79e4); }
+
+.courses-item.blue .courses-item__t-v {
+  color: #4240a3; }
+
+.courses-item.blue .courses-item__link {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#4240a3), to(#7c79e4));
+  background-image: -o-linear-gradient(bottom, #4240a3, #7c79e4);
+  background-image: linear-gradient(to top, #4240a3, #7c79e4); }
 
 .courses-item__name {
   font-size: 24px;
@@ -2645,6 +2670,52 @@
       width: 60px;
       height: 60px;
       margin: 5px 8px; } }
+
+.express-list.courses-list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  @media (max-width: 1024px) {
+    .express-list.courses-list {
+      -webkit-box-pack: stretch;
+      -webkit-justify-content: stretch;
+          -ms-flex-pack: stretch;
+              justify-content: stretch;
+      max-width: initial; } }
+  @media (max-width: 768px) {
+    .express-list.courses-list {
+      grid-template-columns: 1fr; } }
+  .express-list.courses-list .courses-item__name {
+    text-align: left; }
+  .express-list.courses-list .courses-item__name-block {
+    min-height: 116px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 28px 20px 30px; }
+  .express-list.courses-list .courses-item__view {
+    padding: 17px 17px 27px; }
+  .express-list.courses-list .courses-item__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: left;
+    color: #000; }
+  .express-list.courses-list .courses-item__duration {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    width: 100%;
+    margin: 20px 0 25px; }
+  .express-list.courses-list .courses-item__link {
+    margin-top: auto; }
 
 .footer {
   background-color: #358125;
@@ -2895,6 +2966,117 @@
           -ms-flex-pack: center;
               justify-content: center; } }
 
+.text-block {
+  margin: 25px 0; }
+  .text-block:first-of-type {
+    margin-top: 0; }
+  .text-block:last-of-type {
+    margin-bottom: 0; }
+  .text-block p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000; }
+  .text-block .remark {
+    border: solid 1px #2e811d;
+    padding: 15px 15px 20px;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5;
+    color: #000;
+    margin: 25px 0; }
+  .text-block p.bold {
+    font-weight: bold; }
+  .text-block a {
+    font-weight: bold;
+    color: #8758a6;
+    text-decoration: underline; }
+
+.remark-b {
+  border: solid 1px #2e811d;
+  padding: 15px 15px 20px;
+  background-color: #f3f3f3;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  margin: 25px 0; }
+
+.numered-list {
+  margin-top: 70px; }
+  .numered-list ul {
+    list-style: none; }
+  .numered-list p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000; }
+  .numered-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-top: 25px; }
+    .numered-list li::before {
+      position: absolute;
+      content: attr(data-num);
+      font-size: 17.5px;
+      font-weight: 500;
+      left: -4px;
+      top: 4px;
+      color: #fff;
+      width: 22px;
+      height: 22px;
+      background-color: #8758a6;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+
+.numered-list__title {
+  color: #8758a6;
+  font-size: 20px;
+  font-weight: bold; }
+
+.t-img-block {
+  margin: 40px 0 60px; }
+  .t-img-block .center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .t-img-block img {
+    margin: 0 auto;
+    max-width: 100%; }
+  .t-img-block img.full-width {
+    width: 100%; }
+  .t-img-block .img-view {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+    margin: 5px auto 0;
+    max-width: 60%; }
+    @media (max-width: 1024px) {
+      .t-img-block .img-view {
+        max-width: 75%; } }
+    @media (max-width: 480px) {
+      .t-img-block .img-view {
+        max-width: 85%; } }
+
 /*
 
 	Шрифты: 
@@ -3010,3 +3192,18 @@ address {
   @media (max-width: 1024px) {
     .section.page-2-col {
       padding: 25px 15px; } }
+
+.section.content-section {
+  padding: 60px 15px 40px; }
+
+.d-title-block {
+  margin-bottom: 40px; }
+  .d-title-block .title {
+    margin-bottom: 0; }
+  .d-title-block .subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.11;
+    text-align: center;
+    color: #000; }

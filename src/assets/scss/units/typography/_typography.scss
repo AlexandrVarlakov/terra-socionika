@@ -1,0 +1,125 @@
+.text-block{
+    margin: 25px 0;
+
+    &:first-of-type{
+        margin-top: 0;
+    }
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #000;
+    }
+
+    .remark{
+        border: solid 1px #2e811d;
+        padding: 15px 15px 20px;
+        background-color: #f3f3f3;
+        font-size: 16px;
+        font-style: italic;
+        line-height: 1.5;
+        color: #000;
+        margin: 25px 0;
+    }
+    p.bold{
+        font-weight: bold;
+    }
+    a{
+        font-weight: bold;
+        color: #8758a6;
+        text-decoration: underline;
+    }
+}
+
+ .remark-b{
+    border: solid 1px #2e811d;
+    padding: 15px 15px 20px;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    margin: 25px 0;
+ }
+.numered-list{
+    margin-top: 70px;
+
+    ul{
+        list-style: none;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #000;
+    }
+    
+    li{
+        position: relative;
+        padding-left: 35px;
+        margin-top: 25px;
+        
+        &::before{
+            position: absolute;
+            content: attr(data-num);
+
+            font-size: 17.5px;
+            font-weight: 500;
+            left: -4px;
+            top: 4px;
+            color: #fff;
+            width: 22px;
+            height: 22px;
+            background-color: #8758a6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+}
+.numered-list__title{
+    color: #8758a6;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.t-img-block{
+    margin: 40px 0 60px;
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    img.full-width{
+        width: 100%;
+    }
+    .img-view{
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 1.5;
+        text-align: center;
+        color: #000;
+        margin: 5px auto 0;
+        max-width: 60%;
+
+        @media (max-width: 1024px){
+            max-width: 75%;
+        }
+        @media (max-width: 480px){
+            max-width: 85%;
+        }
+    }
+}
+

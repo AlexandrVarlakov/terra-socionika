@@ -29,9 +29,13 @@
 @import 'units/about-centre/_about-centre.scss';
 
 
+@import 'units/statistics/_statistics.scss';
+
 @import 'units/courses/_courses.scss';
 
 @import 'units/footer/_footer.scss';
+
+@import 'units/typography/_typography.scss';
 
 /*
 
@@ -169,5 +173,25 @@ address{
 
 	.right-col{
 
+	}
+}
+
+.section.content-section{
+	padding: 60px 15px 40px;
+}
+
+.d-title-block{
+
+	margin-bottom: 40px;
+	.title{
+		margin-bottom: 0;
+	}
+	.subtitle{
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		line-height: 1.11;
+		text-align: center;
+		color: #000;
 	}
 }
