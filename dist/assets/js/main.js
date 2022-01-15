@@ -2,7 +2,11 @@ maskPhone('#phone');
 
 var mainSlider = new Swiper('.m-slider', {
     speed: 1000,
-    
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
     spaceBetween: 100,
     autoHeight: false,
     grabCursor: true,
@@ -21,6 +25,74 @@ var mainSlider = new Swiper('.m-slider', {
         clickable: true,
     },
 });
+
+var swiperPrograms = new Swiper(".swiper-programs", {
+    speed: 1000,
+    slidesPerView: 1,
+    
+    spaceBetween: 30,
+    breakpoints: {
+        1025: {
+            grid: {
+                rows: 2,
+            },
+        }
+    },
+    pagination: {
+      el: ".programm-pagination",
+      clickable: true,
+    },
+  });
+
+  var clientsSwiper = new Swiper(".swiper-clients", {
+    speed: 1000,
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    spaceBetween: 40,
+    breakpoints: {
+        1025: {
+            slidesPerView: 4,
+        },
+
+        768: {
+            slidesPerView: 3,
+        },
+
+        480: {
+            slidesPerView: 2,
+        }
+    },
+    
+    navigation: {
+        prevEl: '.prev-client',
+        nextEl: '.next-client'
+    },
+    
+  });
+
+
+  
+var reviewsSlider = new Swiper('.c-reviews-slider', {
+    speed: 1000,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    slidesPerView: 1,
+    spaceBetween: 100,
+    navigation: {
+        prevEl: '.prev-review',
+        nextEl: '.next-review'
+    },
+    
+});
+
+
 
 document.addEventListener('DOMContentLoaded', function(){
     
@@ -169,3 +241,53 @@ if ( weHelpItem ) {
         }
     })
 }
+
+
+
+let options = {
+    //zIndex: 1000, 
+    //background: 'rgba(12, 130, 121, 0.5)', 
+    //displayFog: 'block', //Значение по умолчанию flex
+    //displayModal: 'flex', //Значение по умолчанию block
+    //showModalAnimationName: 'fadeInBottom', 
+    //closeModalAnimationName: 'fadeOutTop', 
+    closeClasses: ['close-modal'], 
+    //closeModalOnFogClick: false, 
+    showModalAnimationDuration: 800,
+    //closeModalAnimationDuration: 300,
+    showFogAnimationName: 'fadeIn',
+    closeFogAnimationName: 'fadeOut',
+    showFogAnimationDuration: 300,
+    closeFogAnimationDuration: 300,
+
+    documentScrolled: false, 
+    //onModalClose: function(){console.log('modal close');},
+    //onModalOpen: function(){console.log('modal open');}
+
+}
+
+//document.querySelector('.btn-1').onclick = function(){
+//let modal = new easyModal('modal-thanks', 
+  //      {
+            //zIndex: 1000, 
+            //background: 'rgba(12, 130, 121, 0.5)', 
+            //displayFog: 'block', //Значение по умолчанию flex
+            //displayModal: 'flex', //Значение по умолчанию block
+            //showModalAnimationName: 'fadeInBottom', 
+            //closeModalAnimationName: 'fadeOutTop', 
+       //     closeClasses: ['close-modal'], 
+            //closeModalOnFogClick: false, 
+         //   showModalAnimationDuration: 800,
+            //closeModalAnimationDuration: 300,
+           /* showFogAnimationName: 'fadeIn',
+            closeFogAnimationName: 'fadeOut',
+            showFogAnimationDuration: 300,
+            closeFogAnimationDuration: 300,
+
+            documentScrolled: false, */
+            //onModalClose: function(){console.log('modal close');},
+            //onModalOpen: function(){console.log('modal open');}
+
+//        }
+//);
+//}

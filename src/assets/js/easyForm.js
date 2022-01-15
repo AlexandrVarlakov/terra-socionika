@@ -110,9 +110,17 @@ btnsSend.forEach( (btn) => {
                 
             })
             
+            let message = this.closest('.easyForm').querySelector("#message");
             
+            if ( message ){
+                data_body += "&message=" + message.value;
+            }
 
             
+            
+
+            let thanksMessage = this.closest('.easyForm').getAttribute('data-thanks');
+            let modalThanksMessage =   document.querySelector('.modal-thanks__message');
 
 
 
@@ -132,13 +140,64 @@ btnsSend.forEach( (btn) => {
         
         
             console.log("Почта отправлена");
-            inputs.forEach ( (input) => {
-                input.value = '';
+            
+
+            modalThanksMessage.innerHTML = thanksMessage;
+
+
+            let modal = new easyModal('modal-thanks', 
+                                                        {
+                                                            //zIndex: 1000, 
+                                                            //background: 'rgba(12, 130, 121, 0.5)', 
+                                                            //displayFog: 'block', //Значение по умолчанию flex
+                                                            //displayModal: 'flex', //Значение по умолчанию block
+                                                            showModalAnimationName: 'fadeInBottom', 
+                                                            closeModalAnimationName: 'fadeOutTop', 
+                                                            closeClasses: ['modal-close'], 
+                                                            //closeModalOnFogClick: false, 
+                                                            showModalAnimationDuration: 800,
+                                                            //closeModalAnimationDuration: 300,
+                                                            showFogAnimationName: 'fadeIn',
+                                                            closeFogAnimationName: 'fadeOut',
+                                                            showFogAnimationDuration: 300,
+                                                            closeFogAnimationDuration: 300,
+                                                
+                                                            documentScrolled: false, 
+                                                            //onModalClose: function(){console.log('modal close');},
+                                                            //onModalOpen: function(){console.log('modal open');}
+                                                
             });
+
+            setTimeout( ()=>{
+                modal.closeModal();
+                inputs.forEach( (input) => {
+                    input.value = "";
+                });
+
+                if ( message ) {
+                    message.value = "";
+                }
+                setTimeout( () => {
+                    modalThanksMessage.innerHTML ='';
+                    
+
+                }, 3000 )
+            }, 2000)
+
+
             return response.text()
             })
             .then(i => console.log(i))
-            .catch(() => console.log('ошибка')); 
+            .catch(() => {
+                
+                console.log('ошибка');
+
+                
+
+                
+
+            }
+            ); 
         }
 
     })

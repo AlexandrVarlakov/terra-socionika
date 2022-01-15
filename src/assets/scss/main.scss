@@ -37,6 +37,16 @@
 
 @import 'units/typography/_typography.scss';
 
+@import 'units/icons-font/_icons-font.scss';
+
+@import 'units/icons-font/_social.scss';
+
+@import 'units/easyModal/_easyModal.scss';
+
+@import 'units/modals/_modals.scss';
+
+@import 'units/index/_index.scss';
+
 /*
 
 	Шрифты: 
@@ -131,12 +141,18 @@ address{
 	text-transform: uppercase;
 }
 
+.t-center{
+	text-align: center;
+}
+
 .text{
 	font-size: 18px;
   	line-height: 1.1;
   	color: #000;
 }
-
+.t-white{
+	color: #fff;
+}
 
 
 .section.page-2-col{
@@ -194,4 +210,13 @@ address{
 		text-align: center;
 		color: #000;
 	}
+}
+
+.mt-0{
+    margin-top: 0;
+}
+
+
+.content-section{
+	padding: 60px 15px 80px;
 }

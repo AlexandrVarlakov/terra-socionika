@@ -261,14 +261,26 @@
             background-color: #f08400;
         }
 
-        .we-help-item__icon{
-            border-color: #f08400;
-        }
+        
 
         .we-help-item__line{
             background-color: #f08400;
         }
+        .we-help-item__icon{
+            .fwk-icons{
+                color: #f08400;
 
+                &::before{
+                    color: #f08400;
+                }
+
+                span{
+                    &::before{
+                        color: #f08400;
+                    }
+                }
+            }
+        }
         .we-help-item__title{
             color: #f08400;
         }
@@ -291,12 +303,16 @@
     width: 90px;
     height: 90px;
     min-width: 90px;
-    border: 1px dashed #6aa317;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     transition: 300ms;
+
+    path{
+        transition: 300ms;
+    }
     @media (max-width: 580px){
         margin-right: 22px;
     }
