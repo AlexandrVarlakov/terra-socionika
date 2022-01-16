@@ -49,6 +49,10 @@
     display: flex;
     justify-content: flex-end;
 
+    @media (max-width: 1366px){
+        display: none;
+    }
+
     @media (max-width: 1280px){
         justify-content: flex-start;
     }

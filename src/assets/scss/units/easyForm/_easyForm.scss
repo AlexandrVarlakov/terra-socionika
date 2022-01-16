@@ -123,6 +123,14 @@ $err-input-border-color: #a23d3d;
     color: $btn-color;
     cursor: pointer;
     text-transform: $btn-text-transform;
+
+    transition: 300ms;
+
+        &:hover{
+            box-shadow: 0 0 6px 0px rgb(148, 148, 148);
+            
+            
+        }
 }
 
 .form-btn-send:disabled{
@@ -241,7 +249,7 @@ $err-input-border-color: #a23d3d;
             transition: 300ms;
 
             &:hover{
-                color: #2d2a23;
+                color: #f08400;
             }
         }
     }
@@ -272,7 +280,13 @@ $err-input-border-color: #a23d3d;
         font-weight: 600;
         font-size: 18px;
         letter-spacing: unset;
+        transition: 300ms;
 
+        &:hover{
+            box-shadow: 0 0 6px 0px rgb(148, 148, 148);
+            
+            
+        }
         @media (max-width: 1024px){
             width: 180px;
             margin: 0 auto;
@@ -291,6 +305,12 @@ $err-input-border-color: #a23d3d;
         a{
             color: #1c1c1c;
             text-decoration: underline;
+
+            transition: 300ms;
+
+            &:hover{
+                color: #f08400;
+            }
         }
 
         @media (max-width: 1024px){

@@ -25,7 +25,9 @@
             bottom: 12px;
         }
     }
-
+    @media (min-width: 1025px){
+        margin-top: 0;
+    }
 
     @media (max-width: 420px){
         width: 42px;
@@ -54,16 +56,20 @@
 }
 
 .hamburger-block{
-    grid-column: span 3;   
+    grid-column: span 12;   
     grid-row: 2 / 3;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    @media( min-width: 1025px ){
+    @media( min-width: 1367px ){
         display: none;
     }
+    
     @media( min-width: 680px ){
         grid-column: span 3;
+    }
+    @media( min-width: 1025px ){
+        grid-column: span 12;   
     }
 }
 
@@ -86,7 +92,7 @@
 
     transform: translateY(-120%);
 
-    @media (min-width: 1025px){
+    @media (min-width: 1367px){
         display: none;
     }
 }

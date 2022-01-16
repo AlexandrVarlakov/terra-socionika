@@ -220,3 +220,38 @@ address{
 .content-section{
 	padding: 60px 15px 80px;
 }
+
+.mb-5{
+	margin-bottom: 5px;
+}
+.mb-10{
+	margin-bottom: 10px;
+}
+
+.mb-15{
+	margin-bottom: 15px;
+}
+
+.mb-20{
+	margin-bottom: 20px;
+}
+
+.mb-25{
+	margin-bottom: 25px;
+}
+
+.mb-30{
+	margin-bottom: 30px;
+}
+
+.privacy-list{
+	padding-left: 50px;
+
+	@media (max-width: 1024px){
+		padding-left: 30px;
+	}
+
+	@media (max-width: 768px){
+		padding-left: 20px;
+	}
+}

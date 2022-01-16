@@ -3,10 +3,11 @@ maskPhone('#phone');
 var mainSlider = new Swiper('.m-slider', {
     speed: 1000,
     loop: true,
+    /*
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
-      },
+      },*/
     spaceBetween: 100,
     autoHeight: false,
     grabCursor: true,
@@ -164,12 +165,56 @@ document.querySelectorAll('.mob-menu__item').forEach( (item) => {
     }
 } )
 
+
+function roll(elem){
+    elem.setAttribute('data-state', 'rolled');
+
+    let childListContainer = elem.querySelector('.mob-menu__list-container');
+    let childList = childListContainer.querySelector('.mob-menu__list');
+            
+
+    let childHeight = childListContainer.clientHeight;
+
+
+            
+    childListContainer.style.height = childHeight + 'px';
+    setTimeout( ()=>{childListContainer.style.height = 0 + 'px'}, 10)
+}
+
 mobParentItems.forEach( (item) => {
     item.onclick = function(e){
         e.stopPropagation();
+
+        
+        
+
         if (this.getAttribute('data-state') == 'rolled'){
 
+            let thisParent = item.parentElement;
+            let childrenList = thisParent.children;
+                       
+            for (let i = 0; i < childrenList.length; i++){
+                if (  childrenList[i].getAttribute('data-state') == 'deploy' ){
+                    
+                    roll(childrenList[i]);
+
+                    let subDeployed = childrenList[i].querySelectorAll(".has-child[data-state='deploy']");
+
+                    for (  let j = 0; j < subDeployed.length; j++){
+                        roll(subDeployed[j]);
+                    }
+
+                    
+                }
+                
+                
+            }
             
+
+            
+
+
+           
 
 
             let childListContainer = this.querySelector('.mob-menu__list-container');
@@ -178,9 +223,6 @@ mobParentItems.forEach( (item) => {
 
             let childHeight = childList.clientHeight;
 
-            function setAuto(  ){
-                return 1;
-            }
 
             new Promise ( function(resolve, reject) {
 
@@ -203,23 +245,12 @@ mobParentItems.forEach( (item) => {
             
             
         } else{
-            this.setAttribute('data-state', 'rolled');
-
-            let childListContainer = this.querySelector('.mob-menu__list-container');
-            let childList = childListContainer.querySelector('.mob-menu__list');
-            
-
-            let childHeight = childListContainer.clientHeight;
-
-
-            
-            childListContainer.style.height = childHeight + 'px';
-            setTimeout( ()=>{childListContainer.style.height = 0 + 'px'}, 10)
+            roll(this);
             
             
             
         }
-
+    
     }
 } )
 
@@ -244,50 +275,54 @@ if ( weHelpItem ) {
 
 
 
-let options = {
-    //zIndex: 1000, 
-    //background: 'rgba(12, 130, 121, 0.5)', 
-    //displayFog: 'block', //Значение по умолчанию flex
-    //displayModal: 'flex', //Значение по умолчанию block
-    //showModalAnimationName: 'fadeInBottom', 
-    //closeModalAnimationName: 'fadeOutTop', 
-    closeClasses: ['close-modal'], 
-    //closeModalOnFogClick: false, 
-    showModalAnimationDuration: 800,
-    //closeModalAnimationDuration: 300,
-    showFogAnimationName: 'fadeIn',
-    closeFogAnimationName: 'fadeOut',
-    showFogAnimationDuration: 300,
-    closeFogAnimationDuration: 300,
 
-    documentScrolled: false, 
-    //onModalClose: function(){console.log('modal close');},
-    //onModalOpen: function(){console.log('modal open');}
+
+
+
+
+
+
+
+
+
+let resultsBlock  = document.querySelector('.i-results'); 
+
+
+if ( resultsBlock ) {
+    let fln1 = document.querySelector('#i-result-1');
+    let fln2  = document.querySelector('#i-result-2');
+    let fln3  = document.querySelector('#i-result-3');
+    let fln4  = document.querySelector('#i-result-4');
+
+    let results = animator('.i-results');
+    results.observe('', 0, 0, 1).run();
+    results.onInShow(function(){
+    
+        counter(0, 10, 1500, 1, fln1);
+        counter(0, 1000, 1500, 77, fln2);
+        counter(0, 20, 1500, 2, fln3);
+        counter(0, 7, 1500, 1, fln4);
+    })
 
 }
 
-//document.querySelector('.btn-1').onclick = function(){
-//let modal = new easyModal('modal-thanks', 
-  //      {
-            //zIndex: 1000, 
-            //background: 'rgba(12, 130, 121, 0.5)', 
-            //displayFog: 'block', //Значение по умолчанию flex
-            //displayModal: 'flex', //Значение по умолчанию block
-            //showModalAnimationName: 'fadeInBottom', 
-            //closeModalAnimationName: 'fadeOutTop', 
-       //     closeClasses: ['close-modal'], 
-            //closeModalOnFogClick: false, 
-         //   showModalAnimationDuration: 800,
-            //closeModalAnimationDuration: 300,
-           /* showFogAnimationName: 'fadeIn',
-            closeFogAnimationName: 'fadeOut',
-            showFogAnimationDuration: 300,
-            closeFogAnimationDuration: 300,
 
-            documentScrolled: false, */
-            //onModalClose: function(){console.log('modal close');},
-            //onModalOpen: function(){console.log('modal open');}
 
-//        }
-//);
-//}
+
+
+function counter(_start = 0, end = 0, time = 1500, step = 1, node){
+    let start = _start;
+    let timer = setInterval(function(){
+        start = start + step;
+        node.innerText = start;
+        if ( start >= end) {
+
+            if (start > end){
+                node.innerText = end;
+            }
+
+            clearInterval(timer);
+        }
+        
+   }, (time * step) / end);
+}

@@ -216,6 +216,22 @@
         top: 0;
         right: 0;
         bottom: 0;
+        //border-radius: 50px 0 0 50px;
+        //overflow: hidden;
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: -50px;
+            
+            bottom: -50px;
+            left: -40%;
+            background: linear-gradient(0deg,#9ce10c,#208e37);
+            width: 50%;
+
+            filter: blur(17px) ;
+        }
+
         img{
             width: 100%;
             height: 100%;
@@ -225,13 +241,41 @@
             object-fit: cover;
         }
 
-        .img-fog{
+        .slide-fog{
             position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
-            object-fit: cover;
+            z-index: 5;
+
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: -120px;
+                right: -120px;
+                height: 250px;
+                width: 220px;
+                background: linear-gradient(0deg,#9ce10c,#208e37);
+                border-radius: 25%;
+                transform: rotate(-55deg);
+                filter: blur(25px) ;
+            }
+
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: -140px;
+                right: -90px;
+                height: 250px;
+                width: 220px;
+                background: linear-gradient(0deg,#9ce10c,#208e37);
+                border-radius: 25%;
+                transform: rotate(60deg);
+                filter: blur(35px) ;
+            }
         }
      
         

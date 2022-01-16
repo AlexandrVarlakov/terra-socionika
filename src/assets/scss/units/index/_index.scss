@@ -476,7 +476,13 @@ p.i-view-types-text{
         font-weight: 500;
         color: #fff;
         text-transform: uppercase;
+        transition: 300ms;
 
+        &:hover{
+            box-shadow: 0 0 6px 0px rgb(148, 148, 148);
+            
+            
+        }
         @media(max-width: 420px){
             margin: 5px;
         }
@@ -588,6 +594,14 @@ p.i-view-types-text{
         justify-content: center;
         align-items: center;
         text-transform: uppercase;
+
+        transition: 300ms;
+
+        &:hover{
+            box-shadow: 0 0 6px 0px rgb(148, 148, 148);
+            
+            
+        }
     }
 }
 
