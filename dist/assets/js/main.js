@@ -3,11 +3,11 @@ maskPhone('#phone');
 var mainSlider = new Swiper('.m-slider', {
     speed: 1000,
     loop: true,
-    /*
+    
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
-      },*/
+      },
     spaceBetween: 100,
     autoHeight: false,
     grabCursor: true,
