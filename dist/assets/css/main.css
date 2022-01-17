@@ -1155,6 +1155,34 @@
   @media (max-width: 560px) {
     .m-slider {
       padding-left: 35px; } }
+  .m-slider .img-container.add-fog::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -50px;
+    bottom: -50px;
+    right: -40%;
+    background: -webkit-gradient(linear, left bottom, left top, from(#9ce10c), to(#208e37));
+    background: -o-linear-gradient(bottom, #9ce10c, #208e37);
+    background: linear-gradient(0deg, #9ce10c, #208e37);
+    width: 50%;
+    z-index: 1;
+    -webkit-filter: blur(17px);
+            filter: blur(17px); }
+  .m-slider .img-container.add-fog::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -50px;
+    bottom: -50px;
+    left: -40%;
+    background: -webkit-gradient(linear, left bottom, left top, from(#9ce10c), to(#208e37));
+    background: -o-linear-gradient(bottom, #9ce10c, #208e37);
+    background: linear-gradient(0deg, #9ce10c, #208e37);
+    width: 50%;
+    z-index: 1;
+    -webkit-filter: blur(17px);
+            filter: blur(17px); }
   .m-slider .img-container {
     width: 566px;
     height: 330px;

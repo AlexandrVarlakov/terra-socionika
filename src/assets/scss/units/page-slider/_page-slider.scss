@@ -209,6 +209,38 @@
     @media (max-width: 560px){
         padding-left: 35px;
     }
+    
+    .img-container.add-fog{
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: -50px;
+            
+            bottom: -50px;
+            right: -40%;
+            background: linear-gradient(0deg,#9ce10c,#208e37);
+            width: 50%;
+            z-index: 1;
+            filter: blur(17px) ;
+        }
+
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: -50px;
+            
+            bottom: -50px;
+            left: -40%;
+            background: linear-gradient(0deg,#9ce10c,#208e37);
+            width: 50%;
+            z-index: 1;
+            filter: blur(17px) ;
+        }
+    }
+
+
     .img-container{
         width: 566px;
         height: 330px;
@@ -231,7 +263,7 @@
 
             filter: blur(17px) ;
         }
-
+        
         img{
             width: 100%;
             height: 100%;

@@ -7,7 +7,7 @@ var mainSlider = new Swiper('.m-slider', {
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
-      },
+    },
     spaceBetween: 100,
     autoHeight: false,
     grabCursor: true,
