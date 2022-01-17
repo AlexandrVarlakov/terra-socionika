@@ -144,38 +144,57 @@
 
 
 
-            <div class="i-g-form">
-                <h2 class="title t-white">Оставьте заявку на типирование</h2>
-
-                <form class="easyGridForm easyForm green-form" action="send-typing.php" data-thanks="Ваша заявка на типирование успешно принята. Подождите немного и мы Вам обязательно перезвоним">
-                
-                    
-                        <div class="input-outer-wrap ">
-        
-                            <div class="input-wrap">
-                                <input type="text" name="name" id="name" placeholder="Имя*" class="input-text easyForm__input" required="required" >
-                            </div>
-                            <p class="err-msg">Текст ошибки</p>
-                        </div>
+            <div class="i-g-form--outer-wrap">
+                <div class="i-g-form">
+                    <h2 class="title t-white">Оставьте заявку на типирование</h2>
     
-                        <div class="input-outer-wrap ">
+                    <form class="easyGridForm easyForm green-form" action="send-typing.php" data-thanks="Ваша заявка на типирование успешно принята. Подождите немного и мы Вам обязательно перезвоним">
+                    
+                            <div class="inputs-block">
+                                <div class="input-outer-wrap ">
+            
+                                    <div class="input-wrap">
+                                        <input type="text" name="name" id="name" placeholder="Имя*" class="input-text easyForm__input" required="required" >
+                                    </div>
+                                    <p class="err-msg">Текст ошибки</p>
+                                </div>
+            
+                                <div class="input-outer-wrap ">
+                
+                                    <div class="input-wrap">
+                                        <input type="text" name="phone" id="phone" placeholder="Телефон*" class="input-text easyForm__input" data-type='phone' required="required">
+                                    </div>
+                                    <p class="err-msg">Текст ошибки</p>
+                                </div>
         
-                            <div class="input-wrap">
-                                <input type="text" name="phone" id="phone" placeholder="Телефон*" class="input-text easyForm__input" data-type='phone' required="required">
+                                <div class="input-outer-wrap ">
+                
+                                    <div class="input-wrap">
+                                        <input type="text" name="email" id="email" placeholder="email*" class="input-text easyForm__input" data-type='email' required="required">
+                                    </div>
+                                    <p class="err-msg">Текст ошибки</p>
+                                </div>
                             </div>
-                            <p class="err-msg">Текст ошибки</p>
-                        </div>
-
-                        <div class="input-outer-wrap green-form__btn-outer-wrap">
-                            <button class="form-btn-send">Отправить</button>
-                        </div>
-
-                        <div class="full-length input-outer-wrap rules-block">
-                            <p class="rules">Нажимая на кнопку, я принимаю условия <a href="#">Пользовательского соглашения</a> 
-                                и даю свое несогласие на <a href="#">обработку персональных данных.</a></p>
-                        </div>
-                </form>
+                            
+                            <div class="textarea-block">
+                                <textarea name="comment" placeholder="Комментарий" class="message"></textarea>
+                            </div>
+    
+                            <div class="easyGridForm__bottom">
+                                <div class="full-length input-outer-wrap rules-block">
+                                    <p class="rules">Нажимая на кнопку, я принимаю условия <a href="#">Пользовательского соглашения</a> 
+                                        и даю свое несогласие на <a href="#">обработку персональных данных.</a></p>
+                                </div>
+                                <button class="form-btn-send">Отправить</button>
+                            </div>
+                            
+    
+                            
+                    </form>
+                </div>
             </div>
+
+            
 
 
 
@@ -194,7 +213,7 @@
             <div class="swiper swiper-programs">
                 <div class="swiper-wrapper">
 
-                    <div class="t-programm swiper-slide">
+                    <div class="t-programm swiper-slide t-programm-finished">
                         <div class="t-programm__i-time">
                             <p>12 фев 2021
                                 (Пятница) </p>
@@ -218,7 +237,7 @@
                             <h4>Запись в группу 5-го курса</h4>
                             <h3>Интертипные отношения</h3>
                             <div class="t-programm__table">
-                                <div class="t-programm__state new">Новый курс</div>
+                                <div class="t-programm__state new">Окончена</div>
         
                                 <div class="t-programm__line">
                                     <b>Занятия:</b>
@@ -298,7 +317,7 @@
                         </div>
                     </div>
 
-                    <div class="t-programm swiper-slide">
+                    <div class="t-programm swiper-slide t-programm-finished">
                         <div class="t-programm__i-time">
                             <p>12 фев 2021
                                 (Пятница) </p>
@@ -322,7 +341,7 @@
                             <h4>Запись в группу 5-го курса</h4>
                             <h3>Интертипные отношения</h3>
                             <div class="t-programm__table">
-                                <div class="t-programm__state new">Новый курс</div>
+                                <div class="t-programm__state new">Окончена</div>
         
                                 <div class="t-programm__line">
                                     <b>Занятия:</b>

@@ -110,7 +110,7 @@ btnsSend.forEach( (btn) => {
                 
             })
             
-            let message = this.closest('.easyForm').querySelector("#message");
+            let message = this.closest('.easyForm').querySelector(".message");
             
             if ( message ){
                 data_body += "&message=" + message.value;

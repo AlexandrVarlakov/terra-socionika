@@ -239,16 +239,21 @@
             min-width: 100%;
             min-height: 100%;
             object-fit: cover;
+            clip-path: url(#ellipse);
+            
         }
 
         .slide-fog{
             position: absolute;
             top: 0;
-            right: 0;
+            width: 50%;
             bottom: 0;
             left: 0;
-            z-index: 5;
-
+            z-index: 0;
+            //background: linear-gradient(0deg,#9ce10c,#208e37);
+            //clip-path: url(#fog);
+            filter: blur(55px) ;
+            /*
             &::before{
                 content: "";
                 display: block;
@@ -261,8 +266,8 @@
                 border-radius: 25%;
                 transform: rotate(-55deg);
                 filter: blur(25px) ;
-            }
-
+            }*/
+            /*
             &::after{
                 content: "";
                 display: block;
@@ -275,7 +280,7 @@
                 border-radius: 25%;
                 transform: rotate(60deg);
                 filter: blur(35px) ;
-            }
+            }*/
         }
      
         

@@ -180,14 +180,19 @@ p.i-view-types-text{
     font-weight: 400;
     font-size: 18px;
 }
-
+.i-g-form--outer-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #368125;
+}
 .i-g-form{
-    margin: 0 70px;
+    width: 100%;
     background-color: #368125;
     padding: 25px;
-
+    max-width: 750px;
     @media (max-width: 1024px){
-        margin: 0 40px;
+        
     }
 
     @media (max-width: 680px){
@@ -561,6 +566,22 @@ p.i-view-types-text{
         height: 100%;
         min-height: 100%;
 
+    }
+}
+.t-programm.t-programm-finished{
+    opacity: .5;
+
+    .t-programm__state{
+        background-color: red;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
 }
 
