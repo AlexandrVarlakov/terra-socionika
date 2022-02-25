@@ -1376,11 +1376,11 @@
         padding-right: 22%; } }
     @media (max-width: 560px) {
       .m-slider .swiper-pagination {
-        bottom: 50px;
+        bottom: 15px;
         padding-right: 15%; } }
     @media (max-width: 420px) {
       .m-slider .swiper-pagination {
-        bottom: 20px; } }
+        bottom: 15px; } }
   .m-slider .swiper-pagination-bullet {
     display: inline-block;
     width: 10px;
@@ -1439,6 +1439,30 @@
     opacity: .5; }
     .m-slider .swiper-button-disabled:hover path {
       fill: #fff; }
+
+.course-link {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background-color: #f08400;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  border: 2px solid #f08400;
+  margin-top: 15px;
+  text-align: center;
+  max-width: 160px; }
+  .course-link:hover {
+    background-color: transparent;
+    border-color: #fff; }
+  @media (max-width: 1024px) {
+    .course-link {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 5px 15px; } }
 
 .hamburger {
   width: 66px;
@@ -7137,3 +7161,36 @@ address {
   @media (max-width: 768px) {
     .privacy-list {
       padding-left: 20px; } }
+
+.inner-page-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #a4c9a9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .inner-page-nav svg {
+    width: 14px;
+    height: 14px; }
+  .inner-page-nav span {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600; }

@@ -437,13 +437,13 @@
         }
 
         @media (max-width: 560px){
-            bottom: 50px;
+            bottom: 15px;
 
             padding-right: 15%;
         }
 
         @media (max-width: 420px){
-            bottom: 20px;
+            bottom: 15px;
         }
     }
 
@@ -530,4 +530,31 @@
 
     
     
+}
+
+
+.course-link{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f08400;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 300ms;
+    border: 2px solid #f08400;
+    margin-top: 15px;
+    text-align: center;
+    max-width: 160px;
+    &:hover{
+        background-color: transparent;
+        border-color: #fff;
+        
+    }
+
+    @media (max-width: 1024px){
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px 15px;
+    }
 }

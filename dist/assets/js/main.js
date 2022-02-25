@@ -5,7 +5,7 @@ var mainSlider = new Swiper('.m-slider', {
     loop: true,
     
     autoplay: {
-        delay: 3000,
+        delay: 6000,
         disableOnInteraction: false,
     },
     spaceBetween: 100,
@@ -326,3 +326,114 @@ function counter(_start = 0, end = 0, time = 1500, step = 1, node){
         
    }, (time * step) / end);
 }
+
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    let asideNav = document.querySelector('.aside-nav');
+
+
+    
+
+    if (asideNav){
+
+
+
+
+        let windowWidth = document.body.scrollWidth;
+        window.onscroll = function(){
+            let windowWidth = document.body.scrollWidth;    
+
+            if (windowWidth > 1024){
+                let colWithNav = document.querySelector('.sociotypes-nav-block');
+                let coor = colWithNav.getBoundingClientRect();
+
+                if ( (coor.top + coor.height)  < -100) {
+                    asideNav.classList.add('show');
+                } else{
+                    asideNav.classList.remove('show');
+                }
+            } else{
+                asideNav.classList.add('show');
+            }
+
+            
+
+            
+        }
+        
+
+
+        window.addEventListener('resize', function(event){
+            let windowWidth = document.body.scrollWidth;
+            if ( windowWidth <=  1024){
+
+
+                if ( asideNav.classList.contains('show') === false){
+                    asideNav.classList.add('show')
+                }
+            } else {
+                let colWithNav = document.querySelector('.sociotypes-nav-block');
+                let coor = colWithNav.getBoundingClientRect();
+                
+                if ( (coor.top + coor.height)  < -100) {
+                    asideNav.classList.add('show');
+                } else{
+                    asideNav.classList.remove('show');
+                }
+            }
+        })
+
+
+        let navMover = document.querySelector('.aside-nav__mover');
+        let navMoverText = document.querySelector('.aside-nav__mover--text');
+        
+
+
+        
+        
+        navMover.onclick = function(){
+            if (asideNav.classList.contains('active')){
+                navMoverText.innerHTML = 'Типы';
+                asideNav.classList.remove('active');
+            } else{
+                navMoverText.innerHTML = 'Скрыть';
+                asideNav.classList.add('active');
+            }
+        }
+
+
+        let maleBtn = document.querySelector('.aside-nav__sex--male');
+        let femaleBtn = document.querySelector('.aside-nav__sex--female');
+
+        let maleMenu = document.querySelector('.menu-male');
+        let femaleMenu = document.querySelector('.menu-female');
+
+        maleBtn.onclick = function(){
+            if (this.classList.contains('active') === false ){
+                femaleBtn.classList.remove('active');
+                this.classList.add('active');
+                femaleMenu.classList.remove('active');
+                maleMenu.classList.add('active');
+            } else {
+                return false;
+            }
+
+
+        }
+        femaleBtn.onclick = function(){
+            if (this.classList.contains('active') === false ){
+                maleBtn.classList.remove('active');
+                this.classList.add('active');
+                maleMenu.classList.remove('active');
+                femaleMenu.classList.add('active');
+            } else {
+                return false;
+            }
+
+            
+        }
+        
+    }
+})
+
